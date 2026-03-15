@@ -1,6 +1,7 @@
 using System;
 using MyAppTests.Tests;
 using LibraryApp.Tests;
+using OrderManagement.Tests;
 
 namespace MyAppTests
 {
@@ -20,6 +21,9 @@ namespace MyAppTests
             new LibraryTests().Run();
 
             Console.WriteLine("\nAll tests completed.");
+            Console.WriteLine("Running Order Management Tests...");
+            new OrderTests().Run();
+            Console.WriteLine("All tests completed.");
         }
     }
 }
