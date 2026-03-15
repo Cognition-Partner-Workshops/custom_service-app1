@@ -1,5 +1,6 @@
 using System;
 using MyAppTests.Tests;
+using LibraryApp.Tests;
 
 namespace MyAppTests
 {
@@ -11,7 +12,12 @@ namespace MyAppTests
             new LoginTests().Run();
 
             Console.WriteLine("\nRunning User Creation Tests...");
-            new UserCreationTests().Run();
+            new UserCreationTests().Run(); 
+
+            Console.WriteLine("\nAll tests completed.");
+            
+            Console.WriteLine("\n=== Running LibraryApp Tests ===");
+            new LibraryTests().Run();
 
             Console.WriteLine("\nAll tests completed.");
         }
